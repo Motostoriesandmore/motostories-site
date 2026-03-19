@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div style={{fontFamily:'Arial', padding:'40px', background:'#111', color:'#fff', minHeight:'100vh'}}>
+    <div style={{fontFamily:'Arial', padding:'40px', background:'#111', color:'#fff', minHeight:'100vh', maxWidth:'1000px', margin:'0 auto'}}>
 
       <h1 style={{fontSize:'48px', marginBottom:'10px'}}>
         MotoStories & More
@@ -14,26 +14,20 @@ export default function Home() {
 
       <h2>Latest Video</h2>
 
-    <div style={{position:'relative', paddingBottom:'56.25%', height:0, overflow:'hidden', maxWidth:'100%'}}>
-  <iframe
-    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-    title="YouTube video player"
-    frameBorder="0"
-    allowFullScreen
-    style={{
-      position:'absolute',
-      top:0,
-      left:0,
-      width:'100%',
-      height:'100%'
-    }}
-  ></iframe>
-</div>
-        src="https://www.youtube.com/embed/t6CKTT_KL08"
-        title="YouTube video player"
-        frameBorder="0"
-        allowFullScreen
-      ></iframe>
+      <div style={{width:'100%', maxWidth:'960px', aspectRatio:'16 / 9', margin:'20px 0'}}>
+        <iframe
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="YouTube video player"
+          frameBorder="0"
+          allowFullScreen
+          style={{
+            width:'100%',
+            height:'100%',
+            border:'0',
+            display:'block'
+          }}
+        ></iframe>
+      </div>
 
       <p style={{color:'#aaa', marginTop:'10px'}}>
         New videos every week — builds, stories, reviews, and real rider insight.
