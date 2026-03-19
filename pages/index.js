@@ -1,3 +1,4 @@
+import { getLatestLongFormVideo } from "../lib/youtube";
 export default function Home() {
   return (
     <div
@@ -36,7 +37,7 @@ export default function Home() {
         }}
       >
         <iframe
-          src="https://www.youtube.com/embed?listType=user_uploads&list=MotoStorieswithUnkiePhil"
+          src={`https://www.youtube.com/embed/${latestVideo?.id}`}
           title="Latest MotoStories and More uploads"
           frameBorder="0"
           allowFullScreen
@@ -93,4 +94,13 @@ export default function Home() {
       <p>PDF guides, checklists, and gear breakdowns coming soon.</p>
     </div>
   );
+}
+export async function getServerSideProps() {
+  const latestVideo = await getLatestLongFormVideo();
+
+  return {
+    props: {
+      latestVideo,
+    },
+  };
 }
