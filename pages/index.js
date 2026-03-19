@@ -16,7 +16,7 @@ export default function Home() {
 
       <div style={{width:'100%', maxWidth:'960px', aspectRatio:'16 / 9', margin:'20px 0'}}>
         <iframe
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          src="https://www.youtube.com/embed/Ais1fww-Zsc"
           title="YouTube video player"
           frameBorder="0"
           allowFullScreen
