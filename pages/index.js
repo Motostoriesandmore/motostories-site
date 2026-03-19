@@ -14,9 +14,9 @@ export default function Home() {
 
       <h2>Latest Video</h2>
 
-      <iframe
-        width="100%"
-        height="400"
+    <iframe
+  width="100%"
+  height="720"
         src="https://www.youtube.com/embed/t6CKTT_KL08"
         title="YouTube video player"
         frameBorder="0"
