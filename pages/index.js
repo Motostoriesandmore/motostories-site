@@ -14,9 +14,21 @@ export default function Home() {
 
       <h2>Latest Video</h2>
 
-    <iframe
-  width="100%"
-  height="720"
+    <div style={{position:'relative', paddingBottom:'56.25%', height:0, overflow:'hidden', maxWidth:'100%'}}>
+  <iframe
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    title="YouTube video player"
+    frameBorder="0"
+    allowFullScreen
+    style={{
+      position:'absolute',
+      top:0,
+      left:0,
+      width:'100%',
+      height:'100%'
+    }}
+  ></iframe>
+</div>
         src="https://www.youtube.com/embed/t6CKTT_KL08"
         title="YouTube video player"
         frameBorder="0"
